@@ -6,9 +6,11 @@ using namespace std;
 #define FOR(i, m, n) for(int i = m; i < n; i++)
 #define ANS(ans) cout << ans << endl
 
-
 int main() {
-    int n;
-    cin >> n;
-    vector<int> 
+    long long a,b,x;
+  	long long ans = 0;
+    cin >> a >> b >> x;
+    ans = (b-a) / x;
+    if(a % x == 0 || b % x == 0) ans +=1;
+  	ANS(ans);
 }
