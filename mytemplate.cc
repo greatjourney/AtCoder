@@ -10,5 +10,5 @@ int main() {
     int R,C,K;
     cin >> R >> C >> K;
     cin >> n;
-    vector<int> 
+    vector<int> jjd
 }
