@@ -8,9 +8,12 @@ using namespace std;
 #define FLG(flg) if(flg) cout << "Yes" << endl; else cout << "No" << endl;
 #define YES cout << "Yes" << endl;
 #define NO cout << "No" << endl;
+#define COUT(s) cout << s << endl;
 #define AN vector<int> a(n); for(int i = 0; i < n; i++) cin >> a[i];
 #define IN  int n;  cin >> n;
 #define VI  vector<int> 
+#define SS stringstream ss;
+#define SOLVE cout << solve() << endl;
 
 
 int main() {

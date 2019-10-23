@@ -17,18 +17,15 @@ using namespace std;
 
 int main() {
     int n;
+    string s; 
     cin >> n;
-    vector<int> a(n); 
-    for(int i = 0; i < n; i++) cin >> a[i];
-    for(int i = 0; i < n; i++) cout >> a[i];
-    sort(a,a+n);
-    reverse(a,a+n);
-    long long sum = 0;
-    for(int i = 0; i < n; i++) {
-        for(int j = i + 1; j < n; j++) {
-            for(int h = j + 1; h < n; h++) {
-                if (a[i] < a[j] + a[h]) sum += 1;
-            }
+    cin >> s;
+    int sum = 1;
+    char a = s[0];
+    REP(i,n) {
+        if (s[i] != a) {
+            sum += 1;
+            a = s[i];
         }
     }
     COUT(sum)
